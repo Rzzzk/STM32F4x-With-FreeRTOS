@@ -57,7 +57,7 @@ void Task_A(void *p)
 {
 
 	u8 taskMess[] = "I am in task A\r\n";
-	u8 len = strlen((char*)taskMess);
+	u8 len = strlen((char*)aStringData);
 
 	while(1)
 	{
@@ -170,7 +170,7 @@ void aLED4_Tog(void)
 
 void delay(void)
 {
-	for (u32 i=0; i< 1000000 ; i++)
+	for (u32 i=0; i< 16000000 ; i++)
 	{
 		(void)i;
 	}

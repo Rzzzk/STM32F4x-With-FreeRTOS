@@ -170,7 +170,7 @@ void aLED4_Tog(void)
 
 void delay(void)
 {
-	for (u32 i=0; i< 1000000 ; i++)
+	for (u32 i=0; i< 16000000 ; i++)
 	{
 		(void)i;
 	}

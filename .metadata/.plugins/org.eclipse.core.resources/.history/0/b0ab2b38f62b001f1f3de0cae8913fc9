@@ -43,9 +43,6 @@ void aLED4_Tog(void);
 
 void aButton_Init(void);
 void aReadUserButton(GPIO_PinState_t *State);
-void delay(void);
-
-
 
 
 
@@ -55,9 +52,8 @@ NVIC_Handle_t aEXTI0;
 
 void Task_A(void *p)
 {
-
+	u8 len = strlen((char*)aStringData);
 	u8 taskMess[] = "I am in task A\r\n";
-	u8 len = strlen((char*)taskMess);
 
 	while(1)
 	{
@@ -106,8 +102,11 @@ void PreOS_Init(void)
 	NVIC_Init();
 	/*********   GPIO   ********************/
 	aGPIO_USART2_Init();
+
 	aLED4_Init();
+
 	aButton_Init();
+
 	/*********   USART  *******************/
 	aUSART2_Init();
 	/********    UART   *******************/
@@ -160,20 +159,8 @@ void aButton_Init(void)
 
 void aLED4_Tog(void)
 {
-	u8 isrMess[] = "I am in EXTI0 ISR \r\n";
-	u8 len = strlen((char*)isrMess);
-	USART_enuSendDataSyn(&aUSART2_hn,isrMess,len);
-
 	GPIO_enuToggleOutputPin(aLED4pin.GPIO_Port, aLED4pin.GPIO_Config.GPIO_PinNumber );
 	delay();
-}
-
-void delay(void)
-{
-	for (u32 i=0; i< 1000000 ; i++)
-	{
-		(void)i;
-	}
 }
 
 void aUSART2_Init(void)
@@ -219,12 +206,6 @@ void NVIC_Init(void)
 	aNvic_Hn.IRQn = USART2_IRQn;
 	aNvic_Hn.NVIC_Confg.PendingFlag = NVIC_PendFlagIsLow;
 	aNvic_Hn.NVIC_Confg.GroupPriority = 4;
-	aNvic_Hn.NVIC_Confg.SubPriority   = 0;
-	NVIC_enuInitIRQn(&aNvic_Hn);
-
-	aNvic_Hn.IRQn = EXTI0_IRQn;
-	aNvic_Hn.NVIC_Confg.PendingFlag = NVIC_PendFlagIsLow;
-	aNvic_Hn.NVIC_Confg.GroupPriority = 2;
 	aNvic_Hn.NVIC_Confg.SubPriority   = 0;
 	NVIC_enuInitIRQn(&aNvic_Hn);
 }

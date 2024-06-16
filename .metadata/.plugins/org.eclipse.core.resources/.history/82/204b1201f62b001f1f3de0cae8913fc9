@@ -43,9 +43,6 @@ void aLED4_Tog(void);
 
 void aButton_Init(void);
 void aReadUserButton(GPIO_PinState_t *State);
-void delay(void);
-
-
 
 
 
@@ -55,9 +52,8 @@ NVIC_Handle_t aEXTI0;
 
 void Task_A(void *p)
 {
-
+	u8 len = strlen((char*)aStringData);
 	u8 taskMess[] = "I am in task A\r\n";
-	u8 len = strlen((char*)taskMess);
 
 	while(1)
 	{
@@ -106,8 +102,6 @@ void PreOS_Init(void)
 	NVIC_Init();
 	/*********   GPIO   ********************/
 	aGPIO_USART2_Init();
-	aLED4_Init();
-	aButton_Init();
 	/*********   USART  *******************/
 	aUSART2_Init();
 	/********    UART   *******************/
@@ -117,14 +111,18 @@ void PreOS_Init(void)
 
 void aRCC_Init(void)
 {
+	RCC_SysClk_t clkSysType;
+	u32 clk;
+
 	RCC_Handler_t rcc;
 	rcc.RCC_SysClkSource = RCC_SYSCLK_HSI;
 	rcc.RCC_AHBPrescaler = RCC_AHB_not_divided;
 	rcc.RCC_APB1Prescaler= RCC_APB_not_divided;
 	rcc.RCC_APB2Prescaler= RCC_APB_not_divided;
 
-	// 1. RCC initialization
-
+	/*
+	 * 1. RCC initialization
+	 */
 	RCC_enuInitSystemClk(&rcc);
 }
 
@@ -160,20 +158,8 @@ void aButton_Init(void)
 
 void aLED4_Tog(void)
 {
-	u8 isrMess[] = "I am in EXTI0 ISR \r\n";
-	u8 len = strlen((char*)isrMess);
-	USART_enuSendDataSyn(&aUSART2_hn,isrMess,len);
-
 	GPIO_enuToggleOutputPin(aLED4pin.GPIO_Port, aLED4pin.GPIO_Config.GPIO_PinNumber );
 	delay();
-}
-
-void delay(void)
-{
-	for (u32 i=0; i< 1000000 ; i++)
-	{
-		(void)i;
-	}
 }
 
 void aUSART2_Init(void)
@@ -181,12 +167,12 @@ void aUSART2_Init(void)
 
 	aUSART2_hn.USARTx = USART_2;
 
-	aUSART2_hn.USART_Config.USART_Mode       = USART_Mode_RxTx;
-	aUSART2_hn.USART_Config.USART_WordLen    = USART_WordLen_8Bits;
-	aUSART2_hn.USART_Config.USART_Parity     = USART_Parity_Disable;
+	aUSART2_hn.USART_Config.USART_Mode = USART_Mode_RxTx;
+	aUSART2_hn.USART_Config.USART_WordLen = USART_WordLen_8Bits;
+	aUSART2_hn.USART_Config.USART_Parity = USART_Parity_Disable;
 	aUSART2_hn.USART_Config.USART_HwFlowCtrl = USART_HwFlowCtrl_None;
-	aUSART2_hn.USART_Config.USART_StopBits   = USART_StopBits_1;
-	aUSART2_hn.USART_Config.USART_BaudRate   = USART_STD_BAUD_115200;
+	aUSART2_hn.USART_Config.USART_StopBits = USART_StopBits_1;
+	aUSART2_hn.USART_Config.USART_BaudRate = USART_STD_BAUD_115200;
 	aUSART2_hn.RxBusyState = USART_Ready;
 
 	USART_enuInit(&aUSART2_hn);
@@ -219,12 +205,6 @@ void NVIC_Init(void)
 	aNvic_Hn.IRQn = USART2_IRQn;
 	aNvic_Hn.NVIC_Confg.PendingFlag = NVIC_PendFlagIsLow;
 	aNvic_Hn.NVIC_Confg.GroupPriority = 4;
-	aNvic_Hn.NVIC_Confg.SubPriority   = 0;
-	NVIC_enuInitIRQn(&aNvic_Hn);
-
-	aNvic_Hn.IRQn = EXTI0_IRQn;
-	aNvic_Hn.NVIC_Confg.PendingFlag = NVIC_PendFlagIsLow;
-	aNvic_Hn.NVIC_Confg.GroupPriority = 2;
 	aNvic_Hn.NVIC_Confg.SubPriority   = 0;
 	NVIC_enuInitIRQn(&aNvic_Hn);
 }

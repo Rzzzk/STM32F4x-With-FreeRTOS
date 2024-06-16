@@ -1,0 +1,17 @@
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:20:6:MCAL_PSI_Enable	1
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:25:6:MCAL_PSI_Disable	1
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:30:6:MCAL_SPI_SetDeviceMode	3
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:42:6:MCAL_SPI_SetBusConfig	4
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:59:6:MCAL_SPI_SetClkSpeed	1
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:66:6:MCAL_SPI_SetDataFrameFormate	3
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:78:6:MCAL_SPI_SetCPOL	3
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:90:6:MCAL_SPI_SetCPHA	3
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:104:6:MCAL_SPI_Write	1
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:110:5:MCAL_SPI_Read	1
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:115:6:MCAL_SPI_EnableTxInterrupt	2
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:123:6:MCAL_SPI_DisableTxInterrupt	1
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:129:6:MCAL_SPI_EnableRxInterrupt	1
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:134:6:MCAL_SPI_DisableRxInterrupt	1
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:140:4:MCAL_SPI_GetFlagStatus	2
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:151:4:MCAL_SPI_GetInterruptStatus	2
+../drivers/stm32f407x_MCAL/src/stm32f407x_spi.c:161:6:MCAL_SPI_ClearOVFLag	1

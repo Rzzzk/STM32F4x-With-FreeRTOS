@@ -1,0 +1,13 @@
+../drivers/stm32f407x_drivers/src/stm32f4xxx_rcc.c:22:6:RCC_enuInitSystemClk	1
+../drivers/stm32f407x_drivers/src/stm32f4xxx_rcc.c:37:6:RCC_enuAHB1PeriphClkCtrl	3
+../drivers/stm32f407x_drivers/src/stm32f4xxx_rcc.c:56:6:RCC_enuAHB2PeriphClkCtrl	3
+../drivers/stm32f407x_drivers/src/stm32f4xxx_rcc.c:73:6:RCC_enuAPB1PeriphClkCtrl	3
+../drivers/stm32f407x_drivers/src/stm32f4xxx_rcc.c:90:6:RCC_enuAPB2PeriphClkCtrl	3
+../drivers/stm32f407x_drivers/src/stm32f4xxx_rcc.c:111:6:RCC_enuAHB1PeriphReset	1
+../drivers/stm32f407x_drivers/src/stm32f4xxx_rcc.c:120:6:RCC_enuAHB2PeriphReset	1
+../drivers/stm32f407x_drivers/src/stm32f4xxx_rcc.c:130:6:RCC_enuAPB1PeriphReset	1
+../drivers/stm32f407x_drivers/src/stm32f4xxx_rcc.c:140:6:RCC_enuAPB2PeriphReset	1
+../drivers/stm32f407x_drivers/src/stm32f4xxx_rcc.c:153:6:RCC_enuGetAPB1Value	1
+../drivers/stm32f407x_drivers/src/stm32f4xxx_rcc.c:163:6:RCC_enuGetAPB2Value	1
+../drivers/stm32f407x_drivers/src/stm32f4xxx_rcc.c:172:6:RCC_enuGetSysClkValue	1
+../drivers/stm32f407x_drivers/src/stm32f4xxx_rcc.c:182:6:RCC_enuGetSysClkType	1

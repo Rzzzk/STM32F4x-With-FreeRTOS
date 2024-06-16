@@ -1,0 +1,6 @@
+../drivers/stm32f407x_drivers/src/stm32f4xxx_usart.c:22:6:USART_enuInit	20
+../drivers/stm32f407x_drivers/src/stm32f4xxx_usart.c:133:6:USART_enuSendDataSyn	15
+../drivers/stm32f407x_drivers/src/stm32f4xxx_usart.c:185:6:USART_enuReceiveDataSyn	15
+../drivers/stm32f407x_drivers/src/stm32f4xxx_usart.c:248:6:USART_enuReceiveDataIT	10
+../drivers/stm32f407x_drivers/src/stm32f4xxx_usart.c:283:6:USART_enuSendDataIT	10
+../drivers/stm32f407x_drivers/src/stm32f4xxx_usart.c:318:6:USART_IRQHandling	26

@@ -1,0 +1,9 @@
+../Src/main.c:41:6:Task_A	48	static
+../Src/main.c:55:5:main	16	static
+../Src/main.c:72:6:PreOS_Init	16	static
+../Src/main.c:96:6:aRCC_Init	24	static
+../Src/main.c:132:6:aUSART2_Init	8	static
+../Src/main.c:150:6:aGPIO_USART2_Init	8	static
+../Src/main.c:169:6:NVIC_Init	8	static
+../Src/main.c:180:6:USART_CallBackFun	4	static
+../Src/main.c:185:6:vApplicationStackOverflowHook	16	static

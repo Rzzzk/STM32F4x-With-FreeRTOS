@@ -1,0 +1,11 @@
+../drivers/stm32f407x_drivers/src/stm32f4xxx_spi.c:26:6:SPI_enuInit	24	static
+../drivers/stm32f407x_drivers/src/stm32f4xxx_spi.c:47:6:SPI_enuSendData	32	static
+../drivers/stm32f407x_drivers/src/stm32f4xxx_spi.c:82:6:SPI_enuReceiveData	32	static
+../drivers/stm32f407x_drivers/src/stm32f4xxx_spi.c:118:6:SPI_enuSendDataIT	32	static
+../drivers/stm32f407x_drivers/src/stm32f4xxx_spi.c:144:6:SPI_enuReceiveDataIT	32	static
+../drivers/stm32f407x_drivers/src/stm32f4xxx_spi.c:171:6:SPI_IRQHandling	24	static
+../drivers/stm32f407x_drivers/src/stm32f4xxx_spi.c:207:6:SPI_enuStopTransmission	24	static
+../drivers/stm32f407x_drivers/src/stm32f4xxx_spi.c:219:6:SPI_enuStopReception	24	static
+../drivers/stm32f407x_drivers/src/stm32f4xxx_spi.c:233:14:spi_txe_interrupt_handle	24	static
+../drivers/stm32f407x_drivers/src/stm32f4xxx_spi.c:267:14:spi_rxne_interrupt_handle	32	static
+../drivers/stm32f407x_drivers/src/stm32f4xxx_spi.c:295:14:spi_ovr_err_interrupt_handle	24	static

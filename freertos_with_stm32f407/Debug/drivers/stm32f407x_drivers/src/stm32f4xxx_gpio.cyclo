@@ -1,0 +1,4 @@
+../drivers/stm32f407x_drivers/src/stm32f4xxx_gpio.c:26:6:GPIO_enuInit	3
+../drivers/stm32f407x_drivers/src/stm32f4xxx_gpio.c:111:6:GPIO_enuReadFromInputPin	1
+../drivers/stm32f407x_drivers/src/stm32f4xxx_gpio.c:124:6:GPIO_enuWriteToOutputPin	1
+../drivers/stm32f407x_drivers/src/stm32f4xxx_gpio.c:138:6:GPIO_enuToggleOutputPin	1

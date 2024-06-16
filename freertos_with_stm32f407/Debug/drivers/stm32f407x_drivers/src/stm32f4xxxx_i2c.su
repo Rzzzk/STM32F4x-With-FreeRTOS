@@ -1,0 +1,14 @@
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:29:6:I2C_enuInit	32	static
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:56:6:I2C_enuMasterSendData	32	static
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:114:6:I2C_enuMasterReceiveData	40	static
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:206:6:I2C_enuSlaveSendData	24	static
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:218:6:I2C_enuSlaveReceiveData	24	static
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:234:6:I2C_enuMasterSendDataIT	32	static
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:270:6:I2C_enuMasterReceiveDataIT	32	static
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:306:13:I2C_MasterHandleTXEInterrupt	24	static
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:325:13:I2C_MasterHandleRXNEInterrupt	24	static
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:376:6:I2C_CloseReceiveData	24	static
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:399:6:I2C_CloseSendData	24	static
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:418:6:I2C_EV_IRQHandling	32	static
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:558:13:I2C_ClearADDRFlag	24	static
+../drivers/stm32f407x_drivers/src/stm32f4xxxx_i2c.c:589:6:I2C_ER_IRQHandling	32	static

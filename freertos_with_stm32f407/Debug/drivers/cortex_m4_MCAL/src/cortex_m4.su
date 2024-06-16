@@ -1,0 +1,9 @@
+../drivers/cortex_m4_MCAL/src/cortex_m4.c:30:6:MCAL_SCB_ConfigPriorityGrouping	24	static
+../drivers/cortex_m4_MCAL/src/cortex_m4.c:86:6:MCAL_NVIC_EnableIRQn	24	static
+../drivers/cortex_m4_MCAL/src/cortex_m4.c:107:6:MCAL_NVIC_DisableIRQn	24	static
+../drivers/cortex_m4_MCAL/src/cortex_m4.c:127:6:MCAL_NVIC_GetEnableIRQn	24	static
+../drivers/cortex_m4_MCAL/src/cortex_m4.c:144:6:MCAL_NVIC_SetPendingIRQn	24	static
+../drivers/cortex_m4_MCAL/src/cortex_m4.c:163:6:MCAL_NVIC_ClearPendingIRQn	24	static
+../drivers/cortex_m4_MCAL/src/cortex_m4.c:183:6:MCAL_NVIC_GetPendingIRQn	24	static
+../drivers/cortex_m4_MCAL/src/cortex_m4.c:203:6:MCAL_NVIC_GetActiveIRQn	24	static
+../drivers/cortex_m4_MCAL/src/cortex_m4.c:222:6:MCAL_NVIC_SetPriorityIRQn	24	static

@@ -1,0 +1,2 @@
+../drivers/cortex_m4_drivers/src/cortexm4_systick.c:24:6:SysTick_enuInit	24	static
+../drivers/cortex_m4_drivers/src/cortexm4_systick.c:45:6:SysTick_enuStart	24	static

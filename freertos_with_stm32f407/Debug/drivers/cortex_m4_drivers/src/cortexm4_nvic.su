@@ -1,0 +1,10 @@
+../drivers/cortex_m4_drivers/src/cortexm4_nvic.c:23:6:SCB_enuInit	24	static
+../drivers/cortex_m4_drivers/src/cortexm4_nvic.c:34:6:NVIC_enuInitIRQn	24	static
+../drivers/cortex_m4_drivers/src/cortexm4_nvic.c:54:6:NVIC_enuEnableIRQn	24	static
+../drivers/cortex_m4_drivers/src/cortexm4_nvic.c:63:6:NVIC_enuDisableIRQn	24	static
+../drivers/cortex_m4_drivers/src/cortexm4_nvic.c:72:6:NVIC_enuGetEnableIRQn	24	static
+../drivers/cortex_m4_drivers/src/cortexm4_nvic.c:82:6:NVIC_enuSetPendingIRQn	24	static
+../drivers/cortex_m4_drivers/src/cortexm4_nvic.c:91:6:NVIC_enuClearPendingIRQn	24	static
+../drivers/cortex_m4_drivers/src/cortexm4_nvic.c:101:6:NVIC_enuGetPendingIRQn	24	static
+../drivers/cortex_m4_drivers/src/cortexm4_nvic.c:112:6:NVIC_enuGetActiveIRQn	24	static
+../drivers/cortex_m4_drivers/src/cortexm4_nvic.c:122:6:NVIC_enuSetPriorityIRQn	24	static
